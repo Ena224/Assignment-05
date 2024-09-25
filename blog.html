@@ -66,8 +66,24 @@
     </section>
 
     <script>
-        document.getElementById("home-button")?.addEventListener("click", function () {
-            window.location.href = "index.html";
+      const toggleButtons = document.querySelectorAll(".toggle-btn");
+      const faqAnswers = document.querySelectorAll(".faq-answer");
+      toggleButtons.forEach((button, index) => {
+        button.addEventListener("click", () => {
+          const answer = faqAnswers[index];
+          if (answer.style.display === "none" || answer.style.display === "") {
+            answer.style.display = "block";
+            button.innerText = "-";
+          } else {
+            answer.style.display = "none";
+            button.innerText = "+";
+          }
+        });
+      });
+      document
+        .getElementById("home-button")
+        .addEventListener("click", function () {
+          window.location.href = "index.html";
         });
     </script>
 </body>
