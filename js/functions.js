@@ -89,3 +89,10 @@ function toggleActiveButton(activeButtonId, inactiveButtonId) {
   document.getElementById(inactiveButtonId).classList.remove("active");
   document.getElementById(activeButtonId).classList.add("active");
 }
+
+document.getElementById('blog-btn') 
+  .addEventListener('click',function(event){
+    event.preventDefault();
+     console.log('Blog button clicked ! ');
+     window.location.href = '/blog.html'
+  })
