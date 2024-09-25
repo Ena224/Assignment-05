@@ -40,3 +40,10 @@ document
     showSectionById('add-history-form');
     toggleActiveButton('show-history-form', 'show-donation-form');
   });
+
+  document.getElementById('home-button') 
+  .addEventListener('click',function(event){
+    event.preventDefault();
+     console.log('Blog button clicked ! ');
+     window.location.href = "./blog.html"
+  })
