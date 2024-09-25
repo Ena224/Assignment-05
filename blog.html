@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en"  data-theme="light">
+<head>
+    <meta charset="UTF-8" data-theme="light">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!--  frequently asked question-->
+    <section class="my-24">
+        <h3 class="text-5xl font-bold text-center mb-12">Frequently Asked <span class="text-orange-500">Questions</span></h3>
+        <!-- accordion from daisy ui  -->
+        <div class="hero ">
+          <div class="hero-content flex-col lg:flex-row space-x-5">
+            <img
+              src="assets/ll.png"
+              class="w-full rounded-lg shadow-2xl" />
+            <div class="space-y-5">
+              <div class="collapse collapse-arrow border border-black-300">
+              <input type="radio" name="my-accordion-2" checked="checked" />
+              <div class="collapse-title text-xl font-medium bg-blue  opacity-80 text-black">What is the Document Object Model (DOM)?</div>
+              <div class="collapse-content bg-base-200 ">
+                <p class="">The Document Object Model (DOM) is a programming interface for web documents, representing the structure of a webpage as a tree of objects. Each element, such as headers, paragraphs, and images, is an individual node in this tree. JavaScript can interact with the DOM to dynamically manipulate content, styles, and structure of the page without reloading it. This allows developers to update elements, handle user events, and create interactive experiences. The DOM essentially bridges the gap between HTML/CSS and JavaScript.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow border border-black-300">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium bg-green  opacity-80 text-black">How do you select an element from the DOM ?</div>
+              <div class="collapse-content">
+                <p>You can select an element from the DOM using JavaScript methods like getElementById(), getElementsByClassName(), getElementsByTagName(), querySelector(), and querySelectorAll().
+
+                  1.getElementById('id') selects an element by its unique ID. <br>
+                  2.getElementsByClassName('class') selects elements by class name (returns a collection). <br>
+                 3. querySelector('selector') selects the first element that matches a CSS selector. <br>
+                 4. querySelectorAll('selector') selects all elements that match the selector (returns a NodeList). <br>
+                 These methods allows to interact with and manipulate specific elements in the DOM.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow border border-black-300">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium bg-blue  opacity-80 text-black">What is event delegation in the context of the DOM , and why is it useful ? </div>
+              <div class="collapse-content">
+                <p>Event delegation is a technique in the DOM where a single event listener is attached to a parent element to handle events from its child elements. Instead of adding listeners to each child, the event bubbles up from the child to the parent, which can then respond to the event.
+
+                  This is useful for efficiently managing events, especially when dealing with dynamic content, reducing memory usage, and simplifying code by avoiding multiple listeners. It also ensures new elements added later still trigger the event.
+            </p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow border border-black-300">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium bg-green  opacity-80 text-black">How do you manipulate an element's attributes and styles using the DOM? </div>
+              <div class="collapse-content">
+                <p>
+                  You can manipulate an element's attributes and styles using JavaScript in the DOM:
+
+ 1.Attributes: Use setAttribute('attribute', 'value') to set an attribute and getAttribute('attribute') to retrieve it. For example, element.setAttribute('src', 'image.jpg') changes an image's source. <br>
+
+2.Styles: Use the style property to modify inline CSS, like element.style.color = 'red' to change text color. You can also manipulate multiple styles using the element.style.cssText property or directly change classes with classList.add(), classList.remove(), and classList.toggle() for broader style changes. <br>
+                </p>
+              </div>
+            </div>
+           
+            </div>
+          </div>
+          </div>
+        </div>
+</section>          
+</body>
+</html>
